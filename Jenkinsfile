@@ -4,7 +4,7 @@ pipeline {
     stage('Unit Test') {
       steps {
         bat '.\\\\Scripts\\\\UnitTest.bat'
-        junit '.\\\\Reports\\\\*.xml'
+        junit '*.xml'
       }
     }
 
