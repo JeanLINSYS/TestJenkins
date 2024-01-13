@@ -10,7 +10,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        bat '.\\\\Scripts\\\\Build.bat'
+        lvExecuteBuildStep(lvBuildName: 'Add_Application', lvProjectPath: 'Test Pipeline Jenkins.lvproj', lvBuildTarget: 'Poste de travail')
       }
     }
 
