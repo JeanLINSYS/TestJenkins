@@ -11,6 +11,7 @@ pipeline {
     stage('Build') {
       steps {
         lvExecuteBuildStep(lvBuildName: 'Add_Application', lvProjectPath: 'Test Pipeline Jenkins.lvproj', lvBuildTarget: 'Poste de travail')
+        archiveArtifacts '**/*'
       }
     }
 
