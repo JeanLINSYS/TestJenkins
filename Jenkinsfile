@@ -12,7 +12,7 @@ pipeline {
       steps {
         lvExecuteBuildStep(lvBuildName: 'Add_Application', lvProjectPath: 'Test Pipeline Jenkins.lvproj', lvBuildTarget: 'Poste de travail')
         archiveArtifacts '*Report_*.xml'
-        archiveArtifacts 'Builds/*'
+        archiveArtifacts 'builds/*'
       }
     }
 
