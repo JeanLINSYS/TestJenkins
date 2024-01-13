@@ -8,5 +8,12 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      steps {
+        bat '.\\\\Scripts\\\\Build.bat'
+        archiveArtifacts '*Report_*.xml,builds/**'
+      }
+    }
+
   }
 }
