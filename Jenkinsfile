@@ -10,9 +10,9 @@ pipeline {
 
     stage('Build') {
       steps {
+        bat '.\\\\Scripts\\\\Build.bat'
         archiveArtifacts '*Report_*.xml'
         archiveArtifacts 'builds/**'
-        bat '.\\\\Scripts\\\\Build.bat'
       }
     }
 
