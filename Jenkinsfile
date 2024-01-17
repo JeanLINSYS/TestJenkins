@@ -10,9 +10,8 @@ pipeline {
 
     stage('Build') {
       steps {
-        bat '.\\\\Scripts\\\\Build.bat'
-        archiveArtifacts '*Report_*.xml,builds/**'
         lvExecuteBuildStep(lvBuildName: 'Add_Application', lvProjectPath: 'Test Pipeline Jenkins.lvproj', lvBuildTarget: 'Poste de travail')
+        archiveArtifacts '*Report_*.xml,builds/**'
       }
     }
 
