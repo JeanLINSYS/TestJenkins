@@ -20,7 +20,7 @@ pipeline {
   
   post {
         always {
-            // Étape exécutée après chaque build, qu'il soit réussi, échoué ou instable
+            // Étape exécutée après chaque build, qu'il soit réussi, échoué ou instable bmjvb
             emailext subject: 'Sujet du mail de notification',
                       body: 'Build terminé. Veuillez consulter les résultats.',
                       to: 'jlinisa@linsys-technologies.fr',
