@@ -16,5 +16,11 @@ pipeline {
       }
     }
 
+    stage('Notify') {
+      steps {
+        mail(subject: 'Test Mail Jenkins', body: 'Build succeded', from: 'jlinisa@linsys-technologies.fr', to: 'jlinisa@linsys-technologies.fr')
+      }
+    }
+
   }
 }
