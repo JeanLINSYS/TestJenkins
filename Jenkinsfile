@@ -18,10 +18,10 @@ pipeline {
 
   }
   
-  post {
-        always {
+  //post {
+    //    always {
             // Étape exécutée après chaque build, qu'il soit réussi, échoué ou instable
-            mail(subject: 'Test Mail Jenkins', body: 'Build finished', from: 'jean.linisa@gmail.com', to: 'gabriel_anas.ayoub.ext@asn.com')
-        }
-    }
+      //      mail(subject: 'Test Mail Jenkins', body: 'Build finished', from: 'jean.linisa@gmail.com', to: 'jlinisa@linsys-technologies.fr')
+     //   }
+   // }
 }
