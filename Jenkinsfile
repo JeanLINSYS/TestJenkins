@@ -4,7 +4,7 @@ pipeline {
     stage('Run App') {
       steps {
         bat '.\\\\Scripts\\\\RunApp.bat'
-        archiveArtifacts '.\\\\Fonctions\\\\Report.txt'
+        archiveArtifacts '.\\\\Fonctions\\\\Test_Report.txt'
       }
     }
 
