@@ -28,7 +28,6 @@
 		<Item Name="Utilities" Type="Folder" URL="../Utilities">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Equal Unit Test.vi" Type="VI" URL="../Jenkins/Equal Unit Test.vi"/>
 		<Item Name="IHM.vi" Type="VI" URL="../IHM.vi"/>
 		<Item Name="Main._oldvi.vi" Type="VI" URL="../Main._oldvi.vi"/>
 		<Item Name="Dépendances" Type="Dependencies">
@@ -307,7 +306,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{474080E0-4F7A-4E08-9ED8-1C5695A766F3}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">IHM_Git.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/IHM Git/IHM_Git.exe</Property>
