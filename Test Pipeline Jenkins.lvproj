@@ -28,8 +28,9 @@
 		<Item Name="Utilities" Type="Folder" URL="../Utilities">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
-		<Item Name="Main_2.vi" Type="VI" URL="../Main_2.vi"/>
+		<Item Name="Equal Unit Test.vi" Type="VI" URL="../Jenkins/Equal Unit Test.vi"/>
+		<Item Name="IHM.vi" Type="VI" URL="../IHM.vi"/>
+		<Item Name="Main._oldvi.vi" Type="VI" URL="../Main._oldvi.vi"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Build Path - File Names and Paths Arrays - path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - File Names and Paths Arrays - path__ogtk.vi"/>
@@ -48,6 +49,7 @@
 				<Item Name="Strip Path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Strip Path__ogtk.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="7842910552F72B45FFAA5B67DFEBCBC5Array Size(s)__ogtk.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/_Caraya_internal_deps/7842910552F72B45FFAA5B67DFEBCBC5Array Size(s)__ogtk.vi"/>
 				<Item Name="7842910552F72B45FFAA5B67DFEBCBC5Array to Array of VData__ogtk.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/_Caraya_internal_deps/7842910552F72B45FFAA5B67DFEBCBC5Array to Array of VData__ogtk.vi"/>
 				<Item Name="7842910552F72B45FFAA5B67DFEBCBC5Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/_Caraya_internal_deps/7842910552F72B45FFAA5B67DFEBCBC5Build Error Cluster__ogtk.vi"/>
@@ -147,6 +149,7 @@
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
@@ -228,10 +231,10 @@
 				<Property Name="Source[0].itemID" Type="Str">{C1E37AD5-82FC-42E9-B358-B0B23F498E41}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Main._oldvi.vi</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/Poste de travail/Main_2.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/Poste de travail/IHM.vi</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
@@ -285,6 +288,50 @@
 				<Property Name="TgtF_productName" Type="Str">Add_Library</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{F9F0F154-1B27-4606-9C5F-F8718B23A8B2}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Add_Library.lvlibp</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="IHM Git" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{B76A1530-6547-49BD-AC41-BAA1244A8832}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{5096C21F-99A2-4865-B8BC-99EE062A50F7}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{CB4E610F-7A08-4412-BE85-82829BC3F934}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">IHM Git</Property>
+				<Property Name="Bld_defaultLanguage" Type="Str">French</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/IHM Git</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{474080E0-4F7A-4E08-9ED8-1C5695A766F3}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">IHM_Git.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/IHM Git/IHM_Git.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Répertoire de support</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/IHM Git/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{1CF15A52-0ACE-414C-9C46-3AC32242ACF4}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Git Commands/IHM Git.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">LINSYS TECHNOLOGIES</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">IHM Git</Property>
+				<Property Name="TgtF_internalName" Type="Str">IHM Git</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024 LINSYS TECHNOLOGIES</Property>
+				<Property Name="TgtF_productName" Type="Str">IHM Git</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{E59FA80E-3817-4EC6-9572-C64207FEFEED}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">IHM_Git.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
