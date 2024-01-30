@@ -1,0 +1,6 @@
+CSN1-R13P-C
+91UAF04535BAD
+4FP
+5.02.25.010	Addition_1	1+1	2	2		
+5.02.25.015	Addition_2	2+2	4		0	
+5.02.25.020	Addition_3	3+3	6		5	7
