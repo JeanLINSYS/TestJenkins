@@ -24,10 +24,10 @@ pipeline {
     }
 
   }
-  post {
-    always {
+  //post {
+   // always {
       //mail(subject: 'Test Mail Jenkins', body: 'Build finished', from: 'jean.linisa@gmail.com', to: 'jean.linisa.ext@asn.com')
-    }
+    //}
 
-  }
+  //}
 }
